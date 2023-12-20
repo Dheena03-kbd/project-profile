@@ -4,7 +4,7 @@ services:
     build:
       context: ./Docker-files/db
       dockerfile: Dockerfile
-    image: amrish24/vprodb
+    image: dheenathayalanb/projectdb
     container_name: vprodb
     ports:
       - "3306:3306"
@@ -15,7 +15,7 @@ services:
     build:
       context: ./Docker-files/app
       dockerfile: Dockerfile
-    image: amrish24/vproapp
+    image: dheenathayalanb/projectapp
     container_name: vproapp
     ports:
       - "8080:8080"
